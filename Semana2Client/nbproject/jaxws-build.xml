@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-WS02" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WS02"/>
+        <property name="wsdl-WS02" location="xml-resources/web-service-references/WS02/wsdl/localhost_8080/Semana2/WS02.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WS02" destdir="${build.generated.dir}/jax-wsCache/WS02" wsdl="${wsdl-WS02}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Semana2/WS02?WSDL" xnocompile="true" xendorsed="true" package="pe.company.ws">
+            <depends file="${wsdl-WS02}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WS02"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WS02">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WS02" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/WS02"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/pe/company/ws"/>
+    </target>
+    <target name="wsimport-client-WS02_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WS02_1"/>
+        <property name="wsdl-WS02_1" location="xml-resources/web-service-references/WS02_1/wsdl/localhost_8080/Semana2/WS02.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WS02_1" destdir="${build.generated.dir}/jax-wsCache/WS02_1" wsdl="${wsdl-WS02_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Semana2/WS02?WSDL" xnocompile="true" xendorsed="true" package="pe.company.ws1">
+            <depends file="${wsdl-WS02_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WS02_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WS02_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WS02_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/WS02_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/pe/company/ws1"/>
+    </target>
+    <target name="wsimport-client-WS02_2" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WS02_2"/>
+        <property name="wsdl-WS02_2" location="xml-resources/web-service-references/WS02_2/wsdl/localhost_8080/Semana2/WS02.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WS02_2" destdir="${build.generated.dir}/jax-wsCache/WS02_2" wsdl="${wsdl-WS02_2}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Semana2/WS02?WSDL" xnocompile="true" xendorsed="true" package="pe.company.ws2">
+            <depends file="${wsdl-WS02_2}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WS02_2"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WS02_2">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WS02_2" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/WS02_2"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/pe/company/ws2"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-WS02, wsimport-client-WS02_1, wsimport-client-WS02_2"/>
+</project>
