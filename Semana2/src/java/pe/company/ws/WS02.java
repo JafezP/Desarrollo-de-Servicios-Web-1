@@ -22,15 +22,15 @@ public class WS02 {
     private static final Collection<Empleado> itemsEmpleado = new ArrayList<>();
             
     static {
-    Empleado empleado1 = new Empleado("1021", "Joel", new GregorianCalendar(2014, 03, 10).getTime(),"Desarrollador", 4000.0);
-    Empleado empleado2 = new Empleado("1022", "Joel", new GregorianCalendar(2014, 03, 10).getTime(),"Desarrollador", 4000.0);
-    Empleado empleado3 = new Empleado("1023", "Joel", new GregorianCalendar(2014, 03, 10).getTime(),"Desarrollador", 4000.0);
-    Empleado empleado4 = new Empleado("1024", "Joel", new GregorianCalendar(2014, 03, 10).getTime(),"Desarrollador", 4000.0);
+        Empleado empleado1 = new Empleado("1021", "Joel", new GregorianCalendar(2014, 03, 10).getTime(),"Desarrollador", 4000.0);
+        Empleado empleado2 = new Empleado("1022", "Joel", new GregorianCalendar(2014, 03, 10).getTime(),"Desarrollador", 4000.0);
+        Empleado empleado3 = new Empleado("1023", "Joel", new GregorianCalendar(2014, 03, 10).getTime(),"Desarrollador", 4000.0);
+        Empleado empleado4 = new Empleado("1024", "Joel", new GregorianCalendar(2014, 03, 10).getTime(),"Desarrollador", 4000.0);
 
-    itemsEmpleado.add(empleado1);
-    itemsEmpleado.add(empleado2);
-    itemsEmpleado.add(empleado3);
-    itemsEmpleado.add(empleado4);
+        itemsEmpleado.add(empleado1);
+        itemsEmpleado.add(empleado2);
+        itemsEmpleado.add(empleado3);
+        itemsEmpleado.add(empleado4);
     }
 
     @WebMethod(operationName = "coleccion")
