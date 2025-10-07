@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/Semana4_Examen/VentaWs?wsdl" uri="xml-resources/web-service-references/VentaWs/wsdl/localhost_8080/Semana4_Examen/VentaWs.wsdl"/>
+    <system systemId="http://localhost:8080/Semana4_Examen/VentaWs?xsd=1" uri="xml-resources/web-service-references/VentaWs/wsdl/localhost_8080/Semana4_Examen/VentaWs.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Semana4_Examen/BicicletaWs?wsdl" uri="xml-resources/web-service-references/BicicletaWs_2/wsdl/localhost_8080/Semana4_Examen/BicicletaWs.wsdl"/>
+    <system systemId="http://localhost:8080/Semana4_Examen/BicicletaWs?xsd=1" uri="xml-resources/web-service-references/BicicletaWs_2/wsdl/localhost_8080/Semana4_Examen/BicicletaWs.xsd_1.xsd"/>
+</catalog>

@@ -20,7 +20,7 @@ public class ConexionDb {
             Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
             String url = "jdbc:mysql://localhost/bd_example?useSSL=false&useTimezone=true&serverTimezone=UTC";
             String usr = "root";
-            String psw = "123456";
+            String psw = "1234";
             con = DriverManager.getConnection(url, usr, psw);
         } catch(ClassNotFoundException e) {
             System.out.println("Error >>>> Driver no instalado" + e.getMessage());

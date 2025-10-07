@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-VentaWs" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/VentaWs"/>
+        <property name="wsdl-VentaWs" location="xml-resources/web-service-references/VentaWs/wsdl/localhost_8080/Semana4_Examen/VentaWs.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/VentaWs" destdir="${build.generated.dir}/jax-wsCache/VentaWs" wsdl="${wsdl-VentaWs}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Semana4_Examen/VentaWs?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-VentaWs}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/VentaWs"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/VentaWs">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-VentaWs" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/VentaWs"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/pe/company/ws"/>
+    </target>
+    <target name="wsimport-client-BicicletaWs" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/BicicletaWs"/>
+        <property name="wsdl-BicicletaWs" location="xml-resources/web-service-references/BicicletaWs/wsdl/localhost_8080/Semana4_Examen/BicicletaWs.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/BicicletaWs" destdir="${build.generated.dir}/jax-wsCache/BicicletaWs" wsdl="${wsdl-BicicletaWs}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Semana4_Examen/BicicletaWs?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-BicicletaWs}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/BicicletaWs"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/BicicletaWs">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-BicicletaWs" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/BicicletaWs"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/pe/company/ws"/>
+    </target>
+    <target name="wsimport-client-BicicletaWs_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/BicicletaWs_1"/>
+        <property name="wsdl-BicicletaWs_1" location="xml-resources/web-service-references/BicicletaWs_1/wsdl/localhost_8080/Semana4_Examen/BicicletaWs.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/BicicletaWs_1" destdir="${build.generated.dir}/jax-wsCache/BicicletaWs_1" wsdl="${wsdl-BicicletaWs_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Semana4_Examen/BicicletaWs?wsdl" xnocompile="true" xendorsed="true" package="semana4_examen_client">
+            <depends file="${wsdl-BicicletaWs_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/BicicletaWs_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/BicicletaWs_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-BicicletaWs_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/BicicletaWs_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/semana4_examen_client"/>
+    </target>
+    <target name="wsimport-client-BicicletaWs_2" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/BicicletaWs_2"/>
+        <property name="wsdl-BicicletaWs_2" location="xml-resources/web-service-references/BicicletaWs_2/wsdl/localhost_8080/Semana4_Examen/BicicletaWs.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/BicicletaWs_2" destdir="${build.generated.dir}/jax-wsCache/BicicletaWs_2" wsdl="${wsdl-BicicletaWs_2}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Semana4_Examen/BicicletaWs?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-BicicletaWs_2}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/BicicletaWs_2"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/BicicletaWs_2">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-BicicletaWs_2" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/BicicletaWs_2"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/pe/company/ws"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-VentaWs, wsimport-client-BicicletaWs, wsimport-client-BicicletaWs_1, wsimport-client-BicicletaWs_2"/>
+</project>

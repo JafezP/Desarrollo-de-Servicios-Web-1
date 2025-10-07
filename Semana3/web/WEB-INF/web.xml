@@ -8,9 +8,18 @@
         <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
+    <servlet>
+        <servlet-name>ProductoWs</servlet-name>
+        <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CategoriaWs</servlet-name>
         <url-pattern>/CategoriaWs</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProductoWs</servlet-name>
+        <url-pattern>/ProductoWs</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

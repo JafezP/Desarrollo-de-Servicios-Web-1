@@ -17,13 +17,13 @@ public class Semana2Client {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         Empleado item =  buscarID("1021");
+        Empleado item =  buscarID("1021");
         
-            System.out.println("ID Empleado:" + item.getIdEmpleado());
-            System.out.println("Nombre:" + item.getNombre());
-            System.out.println("Fecha de contrato:" + item.getFechaContrato());
-            System.out.println("Profesion:" + item.getProfesion());
-            System.out.println("Sueldo:" + item.getSueldo());  
+        System.out.println("ID Empleado:" + item.getIdEmpleado());
+        System.out.println("Nombre:" + item.getNombre());
+        System.out.println("Fecha de contrato:" + item.getFechaContrato());
+        System.out.println("Profesion:" + item.getProfesion());
+        System.out.println("Sueldo:" + item.getSueldo());  
     }
 
    /* private static java.util.List<pe.company.ws.Empleado> coleccion(java.lang.String cod) {

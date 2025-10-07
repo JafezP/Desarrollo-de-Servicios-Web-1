@@ -4,6 +4,9 @@
     <service name="CategoriaWs">
       <implementation-class>pe.company.ws.CategoriaWs</implementation-class>
     </service>
+    <service name="ProductoWs">
+      <implementation-class>pe.company.ws.ProductoWs</implementation-class>
+    </service>
   </services>
   <clients/>
   <jsr109>false</jsr109>
