@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/Semana5_Repaso/VentasWs?WSDL" uri="wsdl/localhost_8080/Semana5_Repaso/VentasWs.wsdl"/>
+    <system systemId="http://localhost:8080/Semana5_Repaso/VentasWs?xsd=1" uri="wsdl/localhost_8080/Semana5_Repaso/VentasWs.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Semana5_Repaso/BicicletaWs?WSDL" uri="wsdl/localhost_8080/Semana5_Repaso/BicicletaWs.wsdl"/>
+    <system systemId="http://localhost:8080/Semana5_Repaso/BicicletaWs?xsd=1" uri="wsdl/localhost_8080/Semana5_Repaso/BicicletaWs.xsd_1.xsd"/>
+</catalog>

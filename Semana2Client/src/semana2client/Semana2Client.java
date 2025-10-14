@@ -26,16 +26,6 @@ public class Semana2Client {
         System.out.println("Sueldo:" + item.getSueldo());  
     }
 
-   /* private static java.util.List<pe.company.ws.Empleado> coleccion(java.lang.String cod) {
-        pe.company.ws.WS02_Service service = new pe.company.ws.WS02_Service();
-        pe.company.ws.WS02 port = service.getWS02Port();
-        return port.coleccion(cod);
-    }*/
-
-    private static pe.company.ws2.Empleado buscarID(java.lang.String cod) {
-        pe.company.ws2.WS02_Service service = new pe.company.ws2.WS02_Service();
-        pe.company.ws2.WS02 port = service.getWS02Port();
-        return port.buscarID(cod);
-    }
+    
 
 }
