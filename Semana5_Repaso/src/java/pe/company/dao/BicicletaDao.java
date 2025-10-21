@@ -3,6 +3,7 @@ package pe.company.dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collection;
 import pe.company.dbase.ConexionDb;
@@ -41,9 +42,8 @@ public class BicicletaDao {
                 bicicletas.add(bicicletaVo);
             }
 
-        } catch (Exception e) {
+        } catch (SQLException e) {
             System.out.println("Error al listar bicicletas: " + e.getMessage());
-            e.printStackTrace();
         } finally {
             
         }
