@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (https://github.com/eclipse-ee4j/metro-jax-ws). RI's version is Eclipse Metro/2.4.8 (RELEASE-2.4.8-e044505; 2022-01-04T13:29:23+0000) JAXWS-RI/2.3.5 JAXWS-API/2.3.3 JAXB-RI/2.3.5 JAXB-API/2.3.3 git-revision#e044505. --><xs:schema xmlns:tns="http://ws.model.pe/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws.model.pe/">
+
+<xs:element name="getBicicletasByStock" type="tns:getBicicletasByStock"/>
+
+<xs:element name="getBicicletasByStockResponse" type="tns:getBicicletasByStockResponse"/>
+
+<xs:complexType name="getBicicletasByStock">
+<xs:sequence>
+<xs:element name="stock" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getBicicletasByStockResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:bicicletaVo" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="bicicletaVo">
+<xs:sequence>
+<xs:element name="bici_nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="id_bicicleta" type="xs:int"/>
+<xs:element name="stock" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

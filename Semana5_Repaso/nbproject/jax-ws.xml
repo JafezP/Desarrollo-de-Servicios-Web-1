@@ -7,6 +7,9 @@
     <service name="BicicletaWs">
       <implementation-class>pe.model.ws.BicicletaWs</implementation-class>
     </service>
+    <service name="NewWebService">
+      <implementation-class>pe.model.ws.NewWebService</implementation-class>
+    </service>
   </services>
   <clients/>
   <jsr109>false</jsr109>

@@ -14,6 +14,7 @@ public class ApplicationConfig extends Application {
     }
 
     private void addRestResourceClasses(Set<Class<?>> resources) {
+        resources.add(pe.company.dao.GenericResource.class);
         resources.add(pe.company.rest.GenericResource.class);
     }
 }
